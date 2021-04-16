@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Imagegrid from './components/Imagegrid';
+import Modal from './components/Modal';
+import UploadForm from './components/UploadForm';
 
-function App() {
+
+
+function App({likes}) {
+  const [selectedImg,setSelectedImg] = useState(false);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <span>efecto</span>
+      </nav>
+
+      <UploadForm />
+      <Imagegrid likes={likes} setSelectedImg={setSelectedImg} />
+      {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}
     </div>
   );
 }
