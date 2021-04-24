@@ -40,12 +40,6 @@ code {
 }
 
 
-/*.img-wrap{
-  overflow: hidden;
-  height: 0;
-  padding: 30% 0;        padding cntrls height,will always be perfectly square regardless of width
-  position: relative;
-}*/
 
 .img-wrap img{
   width: 100%;
