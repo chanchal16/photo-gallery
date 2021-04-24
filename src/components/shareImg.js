@@ -21,10 +21,6 @@ export default function ShareImg(selectedImg) {
                 <TwitterIcon size={32} round />
             </TwitterShareButton>
 
-            <PinterestShareButton url={'https://efecto.netlify.app'} media={selectedImg.url}>
-                <PinterestIcon size={32} round />
-            </PinterestShareButton>
-
             <WhatsappShareButton url={'https://efecto.netlify.app'} media={selectedImg.url}>
                 <WhatsappIcon size={32} round />
             </WhatsappShareButton>
