@@ -25,7 +25,6 @@ const useStorage=(file)=> {
             console.log(liked);
 
             collectionRef.add({url:URL,createdAt, name,likecount,liked});
-            // db.collection('images').doc(document.id).update({likes:increment})
             setUrl(URL);
 
         })

@@ -1,8 +1,8 @@
 
 import React from 'react'
 
-import { FacebookShareButton,EmailShareButton, PinterestShareButton,WhatsappShareButton,TwitterShareButton,
-FacebookIcon,PinterestIcon,WhatsappIcon,EmailIcon,TwitterIcon } from "react-share";
+import { FacebookShareButton,EmailShareButton,WhatsappShareButton,TwitterShareButton,
+FacebookIcon,WhatsappIcon,EmailIcon,TwitterIcon } from "react-share";
 
 
 
