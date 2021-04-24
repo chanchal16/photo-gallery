@@ -19,8 +19,12 @@ const useStorage=(file)=> {
         }, async ()=>{      //fires when upload is complete
             const URL = await storageRef.getDownloadURL();
             const createdAt = timestamp();
-            
-            collectionRef.add({url:URL,createdAt,likes:0});
+            let name = 'image'
+            let likecount=0;
+            let liked=false;
+            console.log(liked);
+
+            collectionRef.add({url:URL,createdAt, name,likecount,liked});
             // db.collection('images').doc(document.id).update({likes:increment})
             setUrl(URL);
 
@@ -32,5 +36,7 @@ const useStorage=(file)=> {
     return {progress, error, url} 
     
 }
+
+
 
 export default useStorage

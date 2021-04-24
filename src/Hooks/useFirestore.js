@@ -11,7 +11,7 @@ export default function useFirestore(collection) {
         .onSnapshot((snapshot)=>{
             let documents = [];
             snapshot.forEach(doc =>{
-                documents.push({...doc.data(),id:doc.id,likes:doc.likes});
+                documents.push({...doc.data(),id:doc.id});
                 
             });
             setDocs(documents);
